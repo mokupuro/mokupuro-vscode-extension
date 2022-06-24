@@ -1,5 +1,6 @@
 import * as vscode from "vscode";
 
+// TODO: anyの排除
 export class SideBarView {
   constructor() {
   }
