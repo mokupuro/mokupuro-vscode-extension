@@ -18,7 +18,7 @@
       "activitybar": [
         {
           "id": "mokupuro-vscode",
-          "title": "mokupuro Vscode",
+          "title": "もくプロ",
           "icon": "assets/hiragana_mo.svg"
         }
       ]
@@ -27,7 +27,7 @@
       "mokupuro-vscode": [
         {
           "id": "mokupuroVscode",
-          "name": "mokupuro Vscode"
+          "name": "もくプロ"
         }
       ]
     },
