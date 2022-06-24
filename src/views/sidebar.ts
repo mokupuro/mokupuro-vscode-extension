@@ -1,4 +1,5 @@
 import * as vscode from "vscode";
+import { requestDiscordWebhook } from "../services/request";
 
 // TODO: anyの排除
 export class SideBarView {
@@ -10,11 +11,18 @@ export class SideBarView {
     if (element) {
       return [];
     }
+    const item = new vscode.TreeItem("稼働を報告");
+    item.command = {
+      command: "notify.discord",
+      title: "稼働報告",
+    };
 
-    return [
-      new vscode.TreeItem("1"),
-      new vscode.TreeItem("2"),
-      new vscode.TreeItem("3"),
-    ];
+    return [item];
+  }
+
+  notifyDiscord() {
+    requestDiscordWebhook();
+
+    vscode.window.showInformationMessage("稼働報告しました");
   }
 }
