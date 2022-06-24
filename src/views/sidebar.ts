@@ -8,6 +8,7 @@ export class SideBarView {
   getTreeItem(element: any): vscode.TreeItem {
     return element;
   }
+
   getChildren(element?: any): Thenable<any[]> {
     return Promise.resolve([]);
   }

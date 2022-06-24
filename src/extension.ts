@@ -8,7 +8,7 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.showInformationMessage('Hello World from mokupuro-vscode-extension!');
 
     const sbv = new SideBarView();
-    vscode.window.registerTreeDataProvider("mokupuro-vscode", sbv);
+		vscode.window.registerTreeDataProvider("mokupuro-vscode", sbv);
 	});
 
 	context.subscriptions.push(disposable);
